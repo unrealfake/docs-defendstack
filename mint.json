@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:admin@theDefendStack.org"
+      "url": "mailto:admin@defendstack.org"
     }
   ],
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://docs.theDefendStack.org/"
+    "url": "https://github.com/Defendstack/DefendStack-Suite/tree/main"
   },
   "tabs": [
     {
@@ -62,7 +62,7 @@
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://blogs.theDefendStack.org"
+      "url": "https://blogs.defendstack.org"
     }
   ],
   "navigation": [
@@ -114,8 +114,9 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/TDefendStack_",
-    "discord": "https://discord.gg/jD2cEy2ugg",
-    "linkedin": "https://www.linkedin.com/company/the-DefendStack-appsec/"
+    "x": "https://x.com/DefendStack",
+    "discord": "https://discord.gg/CSeVbCvK",
+    "linkedin": "https://www.linkedin.com/company/defendstack",
+    "github": "https://github.com/Defendstack/DefendStack-Suite/tree/main"
   }
 }
