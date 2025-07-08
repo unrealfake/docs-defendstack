@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Open Source Shift Left Framework",
   "logo": {
-    "dark": "/logo/light_the_DefendStack.svg",
-    "light": "/logo/dark_the_DefendStack.svg"
+    "dark": "/logo/defendstack-black.png",
+    "light": "/logo/defendstack-white.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
