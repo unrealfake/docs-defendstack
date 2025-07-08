@@ -1,0 +1,93 @@
+---
+title: "Configuring DefendStack SCA"
+sidebarTitle: 'Configuration'
+description: "This guide will walk you through the process of setting up DefendStack SCA for your version control system and enabling real-time scanning capabilities."
+---
+
+#
+
+## Prerequisites
+
+* Admin access to your version control system (GitHub/Bitbucket/GitLab)
+
+* API token from your version control system
+
+* Access to DefendStack SCA platform
+
+## Step 1: Configuring Your Version Control Token
+
+1. Navigate to the **Settings** page in DefendStack SCA `https://<app-url>/settings?tab=configuration`
+
+2. Click on **Add Version Control**
+
+3. From the dropdown menu, select your version control system:
+
+   * GitHub
+
+   * Bitbucket
+
+   * GitLab
+
+4. Enter the following details:
+
+   * API Token from your version control system
+
+   * Version Control URL
+
+5. Click **Add Integration** to save your configuration
+
+<img height="200" src="/add_vc.png" />
+
+## Step 2: Setting Up Webhooks for Real-Time Scanning
+
+1. Go to **Settings** in DefendStack Secrets
+
+2. Locate your configured version control system
+
+3. Click the **three dots (⋮)** menu in the right corner
+
+4. Select **Configure**
+
+5. Adjust your scanning settings according to your requirements
+
+6. Click **Create Webhook**
+
+7. Return to the configuration page to find:<img height="200" src="/webhook.png" />
+
+   * Webhook URL
+
+   * Webhook Secret
+
+## Step 3: Configuring Webhooks in Your Version Control
+
+1. Navigate to your version control platform
+
+2. Locate the webhooks configuration section
+
+3. Add a new webhook using:
+
+   * The Webhook URL from DefendStack Secrets
+
+   * The Webhook Secret from DefendStack Secrets
+
+4. Save your webhook configuration
+
+## Verification and Next Steps
+
+Congratulations! You have successfully:
+
+* Connected your version control system to DefendStack SCA
+
+* Enabled real-time scanning for pull requests and commits
+
+You can now:
+
+* Explore your assets in the platform
+
+* View security scans
+
+* Monitor security incidents
+
+## Need Help?
+
+If you encounter any issues during setup, please contact our support team or refer to the troubleshooting guide.

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Open Source Shift Left Framework",
+  "logo": {
+    "dark": "/logo/light_the_DefendStack.svg",
+    "light": "/logo/dark_the_DefendStack.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#223f9c",
+    "light": "#223f9c",
+    "dark": "#223f9c",
+    "anchors": {
+      "from": "#223f9c",
+      "to": "#223f9c"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:admin@theDefendStack.org"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://docs.theDefendStack.org/"
+  },
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "Documentation"
+    },
+    {
+      "name": "DefendStack Platform",
+      "url": "DefendStack-Platform"
+    },
+    {
+      "name": "DefendStack Secrets",
+      "url": "DefendStack-Secrets"
+    },
+    {
+      "name": "DefendStack SCA",
+      "url": "DefendStack-SCA"
+    },
+    {
+      "name": "API Reference",
+      "openapi": "/api-reference/openapi.json",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://docs.theDefendStack.org"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/jD2cEy2ugg"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://blogs.theDefendStack.org"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Documentation",
+      "pages": [
+        "Documentation/Introduction",
+        "Documentation/gettingStarted",
+        "Documentation/support"
+      ]
+    },
+    {
+      "group": "DefendStack Platform",
+      "pages": [
+        "DefendStack-Platform/Introduction",
+        "DefendStack-Platform/Features",
+        {
+        "group": "Configuration",
+        "pages": [
+        "DefendStack-Platform/Configuration/Version-Control",
+        "DefendStack-Platform/Configuration/Alerts",
+        "DefendStack-Platform/Configuration/User-Management",
+        "DefendStack-Platform/Configuration/SSO"
+        ]
+      }
+      ]
+    },
+    {
+      "group": "DefendStack Secrets",
+      "pages": [
+        "DefendStack-Secrets/Introduction",
+        "DefendStack-Secrets/Features",
+        "DefendStack-Secrets/Configuration"
+      ]
+    },
+    {
+      "group": "DefendStack SCA",
+      "pages": [
+        "DefendStack-SCA/Introduction",
+        "DefendStack-SCA/Features",
+        "DefendStack-SCA/Configuration"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/TDefendStack_",
+    "discord": "https://discord.gg/jD2cEy2ugg",
+    "linkedin": "https://www.linkedin.com/company/the-DefendStack-appsec/"
+  }
+}
