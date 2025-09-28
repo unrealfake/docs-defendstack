@@ -110,7 +110,14 @@
         "DefendStack-SCA/Configuration"
       ]
     },
-    
+    {
+      "group": "DefendStack Warzone",
+      "pages": [
+        "DefendStack-Warzone/Introduction",
+        "DefendStack-Warzone/Features",
+        "DefendStack-Warzone/Configuration"
+      ]
+    },
     {
       "group": "API Reference",
       "pages": [
