@@ -114,8 +114,12 @@
       "group": "DefendStack Warzone",
       "pages": [
         "DefendStack-Warzone/Introduction",
-        "DefendStack-Warzone/Features",
-        "DefendStack-Warzone/Configuration"
+        "DefendStack-Warzone/Get-Started/Launch-the-app.mdx",
+        "DefendStack-Warzone/Get-Started/Get-Token.mdx",
+        "DefendStack-Warzone/Get-Started/Add-VC.mdx",
+        "DefendStack-Warzone/Get-Started/Add-Webhook.mdx",
+        "DefendStack-Warzone/Get-Started/Sso-Rbac.mdx",
+        "DefendStack-Warzone/Get-Started/Live-Alerts.mdx"
       ]
     },
     {
