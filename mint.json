@@ -124,8 +124,8 @@
         {
         "group": "Auth-Rbac",
         "pages": [
-          "DefendStack-Warzone/Get-Started/Auth-Rbac/Rbac",
-          "DefendStack-Warzone/Get-Started/Auth-Rbac/Sso.mdx"
+          "DefendStack-Warzone/Get-Started/Auth-RBAC/Rbac",
+          "DefendStack-Warzone/Get-Started/Auth-RBAC/Sso"
           ]
         },  
         "DefendStack-Warzone/Get-Started/Live-Alerts"
