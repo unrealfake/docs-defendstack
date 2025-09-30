@@ -1,0 +1,96 @@
+---
+title: "SSO"
+description: "This guide provides a step-by-step walkthrough of configuring Single Sign-On (SSO) for DefendStack Platform - Warzone. SSO allows users to authenticate with their existing identity provider (IdP) credentials, simplifying access and improving security. "
+---
+
+<iframe width="560" height="315" src="/LP4sEYOuEv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen />
+
+### Overview
+
+This configuration involves setting up a connection between DefendStack Platform and your chosen IdP. You'll need information from your IdP (like URLs and credentials) and will input these details into DefendStack Secrets. DefendStack Secrets will then use this information to redirect users to your IdP for authentication and subsequently grant them access upon successful authentication.
+
+### Prerequisites
+
+Before you begin, ensure you have the following:
+
+* **Administrator access to DefendStack Platform - Warzone:** You'll need appropriate permissions to configure SSO settings.
+
+* **Account with an Identity Provider (IdP):** You'll need an account with a supported IdP (e.g., Okta, Auth0, Azure AD, Google Workspace).
+
+* **Information from your IdP:** Gather the following details from your IdP's configuration panel:
+
+  * **Issuer URL:** The URL that identifies your IdP. This is sometimes referred to as the Metadata URL or the SAML Metadata Exchange endpoint.
+
+  * **Authorization URL:** The URL used to redirect users to the IdP for authentication.
+
+  * **Token URL:** The URL used to exchange an authorization code for an access token.
+
+  * **User Info URL:** The URL used to retrieve user profile information.
+
+  * **Client ID:** A unique identifier for your DefendStack Platform registered with your IdP.
+
+  * **Client Secret:** A secret key used to authenticate your DefendStack Platform with your IdP.
+
+* **DefendStack Secrets Callback URL:** This URL will be provided by DefendStack Platform during the configuration process. You'll need to configure this URL in your IdP as an "Allowed Callback URL" or "Redirect URI."
+
+### Configuration Steps
+
+1. **Navigate to the SSO Settings Page:**
+
+   * Open your web browser and go to DefendStack Platform: `https://<app-url>/settings?tab=sso`
+
+   * This URL should take you directly to the SSO settings page.
+
+2. **Add a New SSO Provider:**
+
+   * On the SSO settings page, click the "Add SSO Provider" button.
+
+3. **Enter SSO Provider Details:**
+
+   * A form will appear where you need to input the required information. Fill in the fields as follows:
+
+     * **Name of Configuration:** Give this configuration a descriptive name (e.g., "Okta SSO," "Azure AD SSO"). This helps you manage multiple SSO configurations.
+
+     * **Select Provider Type:** Choose the type of IdP you are using from the dropdown menu (e.g., Okta, Auth0, Generic SAML 2.0). Selecting the correct provider may pre-populate some of the URL fields.
+
+     * **Issuer URL:** Enter the Issuer URL you obtained from your IdP.
+
+     * **Authorization URL:** Enter the Authorization URL from your IdP.
+
+     * **Token URL:** Enter the Token URL from your IdP.
+
+     * **User Info URL:** Enter the User Info URL from your IdP.
+
+     * **Client ID:** Enter the Client ID you obtained from your IdP.
+
+     * **Client Secret:** Enter the Client Secret you obtained from your IdP.
+
+     * **Callback URL:** DefendStack Platform will provide you with the Callback URL. Copy this URL.
+
+<img height="200" src="/sso.png" />
+
+1. **Configure Callback URL in your IdP:**
+
+   * Go to your IdP's configuration panel and navigate to the settings for your DefendStack Secrets application.
+
+   * Add the Callback URL (that you copied from DefendStack Secrets) to the list of allowed Callback URLs, Redirect URIs, or similar settings. The specific setting name may vary depending on your IdP. This step is crucial for the SSO flow to work correctly.
+
+2. **Create the SSO Provider:**
+
+   * After entering all the required information and configuring the Callback URL in your IdP, click the "Create SSO Provider" button in DefendStack Secrets.
+
+3. **Test the SSO Configuration:**
+
+   * After creating the SSO provider, you should be able to test the configuration. DefendStack Platform may provide a test link, or you can try logging out and then logging back in. You should be redirected to your IdP for authentication.
+
+### Troubleshooting
+
+* **Error messages:** If you encounter any error messages, double-check the values you entered from your IdP. Ensure the Client ID, Client Secret, and URLs are accurate.
+
+* **Callback URL mismatch:** A common issue is a mismatch between the Callback URL configured in DefendStack Platform and the one configured in your IdP. Verify these URLs carefully.
+
+* **IdP Configuration:** Review your IdP's documentation to ensure your DefendStack Platform application is correctly configured on their end.
+
+### Further Assistance
+
+If you experience any difficulties during the SSO configuration process, please contact your DefendStack Platform administrator or refer to the official DefendStack Platform documentation for further assistance.

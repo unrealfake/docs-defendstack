@@ -121,7 +121,13 @@
         "DefendStack-Warzone/Get-Started/Get-Token",
         "DefendStack-Warzone/Get-Started/Add-VC",
         "DefendStack-Warzone/Get-Started/Add-Webhook",
-        "DefendStack-Warzone/Get-Started/Sso-Rbac",
+        {
+        "group": "Auth-Rbac",
+        "pages": [
+          "DefendStack-Warzone/Get-Started/Auth-Rbac/Rbac",
+          "DefendStack-Warzone/Get-Started/Auth-Rbac/Sso.mdx"
+          ]
+        },  
         "DefendStack-Warzone/Get-Started/Live-Alerts"
         ]
         }  
